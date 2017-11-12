@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/background.jpg");
+}
+
+header img {
+	width: 100%;
+	height: 150px;
+}
+
+.maincontent {
+	width: 100%;
+}
+
+.leftcontent, .rightcontent {
+	width: 300px;
+	height: 500px;
+	margin: 5%;
+	opacity: .9;
+	float: left;
+	background: grey;
+	border-radius: 5%
+}
+
+.leftcontent hr {
+	opacity: .5;
+}
+
+.moviepic, .movievideo {
+	width:250px;
+	margin: 8% 10%;
+	height: 200px;
+	float:left;
+	background: black;
+	/*opacity: initial;*/
+}
+
+.moviepic img {
+	width: 100%;
+	height: auto;
+}
+
+.movievideo iframe {
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	vertical-align: middle;
+	border: none;
+}
+
+.footer {
+	background: #d5c833;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0%;
+	opacity: 0.6;
+	/*align-items: center;*/
+	text-align: center;
+}
+
+.footer h4 {
+	color: grey;
+	font-size: smaller;
+}
