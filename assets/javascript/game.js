@@ -11,7 +11,7 @@ var wins = 0,
 var movieList = [{ "name": "DHOOM", "imageref":"assets/images/dhoom2.jpg", "vidref": "https://www.youtube.com/embed/G2r0mVq6YD0?start=37&autoplay=1" },
     { "name": "ROBOT", "imageref": "assets/images/robot.jpg", "vidref": "https://www.youtube.com/embed/f5sjTkaiYhM?start=70&autoplay=1" },
     { "name": "DHONI", "imageref": "assets/images/dhoni.jpg", "vidref": "https://www.youtube.com/embed/b0sPaAy9yUQ?start=10&autoplay=1" },
-    { "name": "KAABIL", "imageref": "assets/images/kaabil.jpg", "vidref": "https://www.youtube.com/embed/Ghr94S7cYOg?autoplay=1" },
+    { "name": "KAABIL", "imageref": "assets/images/kaabil.jpg", "vidref": "https://www.youtube.com/embed/qUi25PV0sqs?start=48&autoplay=1" },
     { "name": "BHOOMI", "imageref": "assets/images/bhoomi.jpg", "vidref": "https://www.youtube.com/embed/p-DkU5OQSN4?autoplay=1" }
 ];
 
@@ -51,6 +51,7 @@ function isCharExistsInMovie(singleChar, movieNameArr) {
 }
 
 function updateScoreCard() {
+	guesses = maxGuessCount - invalidCharGuess;
     $('.wins button').text(wins);
     $('.losses button').text(losses);
     $('.guess button').text(guesses);
@@ -124,9 +125,9 @@ $(document).keyup(function(key) {
         if (invalidCharGuess >= maxGuessCount) {
             losses++;
         }
-        updateScoreCard();
 
     }
+    updateScoreCard();
 
     // console.log('Random movie is : ' + randMovieNum, movieList[randMovieNum].name)
     // console.log(movieList.movies, Object.keys(movieList).length, Object.keys(movieList.movies).length)
