@@ -5,7 +5,7 @@ body {
 
 header img {
 	width: 100%;
-	height: 150px;
+	height: 100px;
 }
 
 .maincontent {
@@ -13,8 +13,8 @@ header img {
 }
 
 .leftcontent, .rightcontent {
-	width: 300px;
-	height: 500px;
+	width: 400px;
+	height: 600px;
 	margin: 5%;
 	opacity: .9;
 	float: left;
@@ -27,9 +27,9 @@ header img {
 }
 
 .moviepic, .movievideo {
-	width:250px;
-	margin: 8% 10%;
-	height: 200px;
+	width:320px;
+	margin: 5% 10%;
+	height: 250px;
 	float:left;
 	background: black;
 	/*opacity: initial;*/
